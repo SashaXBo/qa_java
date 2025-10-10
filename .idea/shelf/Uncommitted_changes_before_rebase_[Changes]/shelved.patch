@@ -1,0 +1,220 @@
+Index: src/main/java/com/example/Lion.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example;\r\n\r\nimport java.util.List;\r\n\r\npublic class Lion {\r\n\r\n    boolean hasMane;\r\n\r\n    public Lion(String sex) throws Exception {\r\n        if (\"Самец\".equals(sex)) {\r\n            hasMane = true;\r\n        } else if (\"Самка\".equals(sex)) {\r\n            hasMane = false;\r\n        } else {\r\n            throw new Exception(\"Используйте допустимые значения пола животного - самей или самка\");\r\n        }\r\n    }\r\n\r\n    Feline feline = new Feline();\r\n\r\n    public int getKittens() {\r\n        return feline.getKittens();\r\n    }\r\n\r\n    public boolean doesHaveMane() {\r\n        return hasMane;\r\n    }\r\n\r\n    public List<String> getFood() throws Exception {\r\n        return feline.getFood(\"Хищник\");\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/Lion.java b/src/main/java/com/example/Lion.java
+--- a/src/main/java/com/example/Lion.java	(revision 52902b4a01ed64ed286e5cd4e8e636cde59a69d4)
++++ b/src/main/java/com/example/Lion.java	(date 1760086773282)
+@@ -5,18 +5,41 @@
+ public class Lion {
+ 
+     boolean hasMane;
++    IFeline feline;
++
++    public Lion(String sex, IFeline feline) throws Exception {
++        this.feline = new IFeline() {
++            @Override
++            public int getKittens() {
++                return 0;
++            }
+ 
+-    public Lion(String sex) throws Exception {
++            @Override
++            public boolean doesHaveMane() {
++                return false;
++            }
++        };
++
+         if ("Самец".equals(sex)) {
+             hasMane = true;
+         } else if ("Самка".equals(sex)) {
+             hasMane = false;
+-        } else {
+-            throw new Exception("Используйте допустимые значения пола животного - самей или самка");
+-        }
+-    }
++        } else throw new Exception("Используйте допустимые значения пола животного - самец или самка");
++    }
++
++    public Lion(String самец, Feline felineMock) {
++        feline = new IFeline() {
++            @Override
++            public int getKittens() {
++                return 0;
++            }
+ 
+-    Feline feline = new Feline();
++            @Override
++            public boolean doesHaveMane() {
++                return false;
++            }
++        };
++    }
+ 
+     public int getKittens() {
+         return feline.getKittens();
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\n    <modelVersion>4.0.0</modelVersion>\n\n    <groupId>org.example</groupId>\n    <artifactId>untitled</artifactId>\n    <version>1.0-SNAPSHOT</version>\n\n    <properties>\n        <maven.compiler.source>11</maven.compiler.source>\n        <maven.compiler.target>11</maven.compiler.target>\n    </properties>\n\n    <build>\n        <sourceDirectory>src/main/java</sourceDirectory>\n        <plugins>\n            <plugin>\n                <groupId>org.apache.maven.plugins</groupId>\n                <artifactId>maven-compiler-plugin</artifactId>\n                <version>3.8.1</version>\n                <configuration>\n                    <source>11</source>\n                    <target>11</target>\n                </configuration>\n            </plugin>\n        </plugins>\n    </build>\n\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision 52902b4a01ed64ed286e5cd4e8e636cde59a69d4)
++++ b/pom.xml	(date 1760086773291)
+@@ -11,6 +11,7 @@
+     <properties>
+         <maven.compiler.source>11</maven.compiler.source>
+         <maven.compiler.target>11</maven.compiler.target>
++        <jacoco.version>0.8.7</jacoco.version>
+     </properties>
+ 
+     <build>
+@@ -25,7 +26,123 @@
+                     <target>11</target>
+                 </configuration>
+             </plugin>
++
++            <plugin>
++                <groupId>org.jacoco</groupId>
++                <artifactId>jacoco-maven-plugin</artifactId>
++                <version>0.8.7</version>
++                <executions>
++                    <execution>
++                        <id>prepare-agent</id>
++                        <phase>initialize</phase>
++                        <goals>
++                            <goal>prepare-agent</goal>
++                        </goals>
++                    </execution>
++                    <execution>
++                        <id>report</id>
++                        <phase>verify</phase>
++                        <goals>
++                            <goal>report</goal>
++                        </goals>
++                    </execution>
++                </executions>
++            </plugin>
+         </plugins>
+     </build>
+ 
++    <dependencies>
++        <dependency>
++            <groupId>org.mockito</groupId>
++            <artifactId>mockito-core</artifactId>
++            <version>3.12.4</version>
++            <scope>test</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>net.bytebuddy</groupId>
++            <artifactId>byte-buddy</artifactId>
++            <version>1.11.16</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.junit.jupiter</groupId>
++            <artifactId>junit-jupiter-api</artifactId>
++            <version>5.9.3</version>
++            <scope>test</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>org.mockito</groupId>
++            <artifactId>mockito-junit-jupiter</artifactId>
++            <version>4.6.1</version>
++            <scope>test</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <version>4.13.1</version>
++            <scope>test</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>org.junit.jupiter</groupId>
++            <artifactId>junit-jupiter-api</artifactId>
++            <version>5.9.3</version>
++            <scope>compile</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>org.junit.jupiter</groupId>
++            <artifactId>junit-jupiter-api</artifactId>
++            <version>5.9.3</version>
++            <scope>test</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>org.junit.jupiter</groupId>
++            <artifactId>junit-jupiter-engine</artifactId>
++            <version>5.9.0</version>
++            <scope>test</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>org.junit.jupiter</groupId>
++            <artifactId>junit-jupiter-params</artifactId>
++            <version>5.9.3</version>
++            <scope>test</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>org.mockito</groupId>
++            <artifactId>mockito-core</artifactId>
++            <version>4.6.1</version>
++            <scope>compile</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>net.bytebuddy</groupId>
++            <artifactId>byte-buddy</artifactId>
++            <version>1.12.10</version>
++            <scope>test</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>net.bytebuddy</groupId>
++            <artifactId>byte-buddy-agent</artifactId>
++            <version>1.12.10</version>
++            <scope>test</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>org.codehaus.plexus</groupId>
++            <artifactId>plexus-interpolation</artifactId>
++            <version>1.26</version>
++            <scope>test</scope>
++        </dependency>
++    </dependencies>
++
++
++
+ </project>
+\ No newline at end of file
+Index: src/main/java/com/example/Cat.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example;\r\n\r\nimport java.util.List;\r\n\r\npublic class Cat {\r\n\r\n    Predator predator;\r\n\r\n    public Cat(Feline feline) {\r\n        this.predator = feline;\r\n    }\r\n\r\n    public String getSound() {\r\n        return \"Мяу\";\r\n    }\r\n\r\n    public List<String> getFood() throws Exception {\r\n        return predator.eatMeat();\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/Cat.java b/src/main/java/com/example/Cat.java
+--- a/src/main/java/com/example/Cat.java	(revision 52902b4a01ed64ed286e5cd4e8e636cde59a69d4)
++++ b/src/main/java/com/example/Cat.java	(date 1760086773298)
+@@ -4,7 +4,7 @@
+ 
+ public class Cat {
+ 
+-    Predator predator;
++    public Predator predator;
+ 
+     public Cat(Feline feline) {
+         this.predator = feline;

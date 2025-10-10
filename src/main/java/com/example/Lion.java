@@ -5,18 +5,41 @@ import java.util.List;
 public class Lion {
 
     boolean hasMane;
+    IFeline feline;
 
-    public Lion(String sex) throws Exception {
+    public Lion(String sex, IFeline feline) throws Exception {
+        this.feline = new IFeline() {
+            @Override
+            public int getKittens() {
+                return 0;
+            }
+
+            @Override
+            public boolean doesHaveMane() {
+                return false;
+            }
+        };
+
         if ("Самец".equals(sex)) {
             hasMane = true;
         } else if ("Самка".equals(sex)) {
             hasMane = false;
-        } else {
-            throw new Exception("Используйте допустимые значения пола животного - самей или самка");
-        }
+        } else throw new Exception("Используйте допустимые значения пола животного - самец или самка");
     }
 
-    Feline feline = new Feline();
+    public Lion(String самец, Feline felineMock) {
+        feline = new IFeline() {
+            @Override
+            public int getKittens() {
+                return 0;
+            }
+
+            @Override
+            public boolean doesHaveMane() {
+                return false;
+            }
+        };
+    }
 
     public int getKittens() {
         return feline.getKittens();

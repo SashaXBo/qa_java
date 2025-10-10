@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d9533113-3d8b-4f4e-8ac2-f37ae44f3add" name="Changes" comment="Merge remote-tracking branch 'origin/main'" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="repository" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="sprint_5" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="31Gq9unPJqFfSZ4AZwi7yPKdmrQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.CatTest (1).executor": "Run",
+    "JUnit.CatTest.executor": "Debug",
+    "JUnit.CatTest.testConstructor.executor": "Debug",
+    "JUnit.CatTest.testGetFood_emptyList.executor": "Run",
+    "JUnit.CatTest.testGetFood_exception.executor": "Run",
+    "JUnit.CatTest.testGetFood_success.executor": "Run",
+    "JUnit.CatTest.testGetSound.executor": "Debug",
+    "JUnit.FelineTest (1).executor": "Debug",
+    "JUnit.FelineTest.executor": "Run",
+    "JUnit.FelineTest.testEatMeat.executor": "Run",
+    "JUnit.FelineTest.testEatMeatException.executor": "Run",
+    "JUnit.FelineTest.testGetFamily.executor": "Run",
+    "JUnit.FelineTest.testGetKittensCustom.executor": "Run",
+    "JUnit.FelineTest.testGetKittensDefault.executor": "Run",
+    "JUnit.LionParameterizedTest.executor": "Debug",
+    "JUnit.LionTest (1).executor": "Run",
+    "JUnit.LionTest.executor": "Debug",
+    "JUnit.LionTest.testConstructorThrowsExceptionForInvalidSex.executor": "Debug",
+    "JUnit.LionTest.testConstructor_invalidSex.executor": "Debug",
+    "JUnit.LionTest.testConstructor_male.executor": "Run",
+    "JUnit.LionTest.testGetFoodThrowsExceptionWhenFelineThrows.executor": "Run",
+    "JUnit.LionTest.testLionHasManeWhenMale.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_directory_selection": "/Users/a.boroukhin/qa_java/src/test/java/com/example",
+    "last_opened_file_path": "/Users/a.boroukhin/qa_java",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+      <recent name="com.example" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.LionParameterizedTest">
+    <configuration name="CatTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CatTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CatTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example" />
+      <option name="MAIN_CLASS_NAME" value="com.example.CatTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LionParameterizedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example" />
+      <option name="MAIN_CLASS_NAME" value="com.example.LionParameterizedTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example" />
+      <option name="MAIN_CLASS_NAME" value="com.example.LionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LionTest.testGetFoodThrowsExceptionWhenFelineThrows" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example" />
+      <option name="MAIN_CLASS_NAME" value="com.example.LionTest" />
+      <option name="METHOD_NAME" value="testGetFoodThrowsExceptionWhenFelineThrows" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LionTest.testLionHasManeWhenMale" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example" />
+      <option name="MAIN_CLASS_NAME" value="com.example.LionTest" />
+      <option name="METHOD_NAME" value="testLionHasManeWhenMale" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="qa_java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="qa_java" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LionTest.testGetFoodThrowsExceptionWhenFelineThrows" />
+        <item itemvalue="JUnit.LionTest" />
+        <item itemvalue="JUnit.LionParameterizedTest" />
+        <item itemvalue="JUnit.CatTest" />
+        <item itemvalue="JUnit.LionTest.testGetFoodThrowsExceptionWhenFelineThrows" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d9533113-3d8b-4f4e-8ac2-f37ae44f3add" name="Changes" comment="" />
+      <created>1755160608922</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1755160608922</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Sprint_6">
+      <option name="closed" value="true" />
+      <created>1758796572716</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758796572716</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add jacoco report">
+      <option name="closed" value="true" />
+      <created>1760082579113</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1760082579113</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Merge remote-tracking branch 'origin/main'">
+      <option name="closed" value="true" />
+      <created>1760085647329</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1760085647329</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Sprint_6" />
+    <MESSAGE value="add jacoco report" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.Exception" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
