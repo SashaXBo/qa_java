@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9533113-3d8b-4f4e-8ac2-f37ae44f3add" name="Changes" comment="Merge remote-tracking branch 'origin/main'">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d9533113-3d8b-4f4e-8ac2-f37ae44f3add" name="Changes" comment="sprint 6 правки для pom, Lion и удаление лишнего IFeline">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/IFeline.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Lion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Lion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/LionParameterizedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/LionParameterizedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/read.me" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +67,7 @@
     "JUnit.FelineTest.testGetKittensCustom.executor": "Run",
     "JUnit.FelineTest.testGetKittensDefault.executor": "Run",
     "JUnit.LionParameterizedTest.executor": "Debug",
-    "JUnit.LionParameterizedTest.testConstructorThrowsExceptionForInvalidSex.executor": "Debug",
+    "JUnit.LionParameterizedTest.testConstructorThrowsExceptionForInvalidSex.executor": "Run",
     "JUnit.LionTest (1).executor": "Run",
     "JUnit.LionTest.executor": "Debug",
     "JUnit.LionTest.testConstructorThrowsExceptionForInvalidSex.executor": "Debug",
@@ -263,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760085647329</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="sprint 6 правки для pom, Lion и удаление лишнего IFeline">
+      <option name="closed" value="true" />
+      <created>1760896641489</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760896641489</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -297,7 +300,8 @@
     <MESSAGE value="Sprint_6" />
     <MESSAGE value="add jacoco report" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'" />
+    <MESSAGE value="sprint 6 правки для pom, Lion и удаление лишнего IFeline" />
+    <option name="LAST_COMMIT_MESSAGE" value="sprint 6 правки для pom, Lion и удаление лишнего IFeline" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -306,11 +310,6 @@
           <properties class="java.lang.Exception" package="java.lang" />
           <option name="timeStamp" value="4" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/example/LionParameterizedTest.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
